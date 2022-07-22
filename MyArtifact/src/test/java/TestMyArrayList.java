@@ -28,18 +28,18 @@ class TestMyArrayList {
 
 	@Test
 	void IntTest() {
-		MyArrayList<String> intArray = new MyArrayList<String>();	
-		intArray.add("5");
-		intArray.add("10");
-		intArray.add("15");
-		intArray.add("20");
-		intArray.add("25");
+		MyArrayList<String> strArray = new MyArrayList<String>();	
+		strArray.add("5");
+		strArray.add("10");
+		strArray.add("15");
+		strArray.add("20");
+		strArray.add("25");
 		
-		intArray.remove("25");
-		System.out.println(intArray.get());
+		strArray.remove("25");
+		System.out.println(strArray.get());
 		String val1 = "20";
 		
-		assertEquals(intArray.get().get(3), val1);
+		assertEquals(strArray.get().get(3), val1);
 	}
 	
 	@Test
